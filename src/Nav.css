@@ -1,0 +1,39 @@
+.nav {
+    padding: 8px 15px;
+    /* border: 1px solid #fff; */
+    border-radius: 50px;
+    font-weight: 500;
+    color: #fff;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.nav::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+.nav:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+.nav p {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+.nav:hover p {
+    color: #000000bb;
+}
